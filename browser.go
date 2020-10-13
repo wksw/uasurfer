@@ -34,13 +34,16 @@ func (u *UserAgent) evalBrowserName(ua string) bool {
 		case strings.Contains(ua, "qq/") || strings.Contains(ua, "qqbrowser/"):
 			u.Browser.Name = BrowserQQ
 
+		case strings.Contains(ua, "wechat/"):
+			u.Browser.Name = BrowserWechat
+
 		case strings.Contains(ua, "opr/") || strings.Contains(ua, "opios/"):
 			u.Browser.Name = BrowserOpera
 
 		case strings.Contains(ua, "silk/"):
 			u.Browser.Name = BrowserSilk
 
-		case strings.Contains(ua, "edg/") || strings.Contains(ua, "edgios/") || strings.Contains(ua, "edga/")|| strings.Contains(ua, "edge/") || strings.Contains(ua, "iemobile/") || strings.Contains(ua, "msie "):
+		case strings.Contains(ua, "edg/") || strings.Contains(ua, "edgios/") || strings.Contains(ua, "edga/") || strings.Contains(ua, "edge/") || strings.Contains(ua, "iemobile/") || strings.Contains(ua, "msie "):
 			u.Browser.Name = BrowserIE
 
 		case strings.Contains(ua, "ucbrowser/") || strings.Contains(ua, "ucweb/"):
@@ -99,6 +102,9 @@ notwebkit:
 	switch {
 	case strings.Contains(ua, "qq/") || strings.Contains(ua, "qqbrowser/"):
 		u.Browser.Name = BrowserQQ
+
+	case strings.Contains(ua, "wechat/"):
+		u.Browser.Name = BrowserWechat
 
 	case strings.Contains(ua, "msie") || strings.Contains(ua, "trident"):
 		u.Browser.Name = BrowserIE

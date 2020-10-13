@@ -48,6 +48,7 @@ const (
 	BrowserNokia
 	BrowserNetFront
 	BrowserQQ
+	BrowserWechat
 	BrowserMaxthon
 	BrowserSogouExplorer
 	BrowserSpotify
