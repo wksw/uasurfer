@@ -49,6 +49,7 @@ const (
 	BrowserNetFront
 	BrowserQQ
 	BrowserWechat
+	BrowserPostman
 	BrowserMaxthon
 	BrowserSogouExplorer
 	BrowserSpotify

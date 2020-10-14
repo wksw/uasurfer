@@ -106,6 +106,9 @@ notwebkit:
 	case strings.Contains(ua, "wechat/"):
 		u.Browser.Name = BrowserWechat
 
+	case strings.Contains(ua, "postman"):
+		u.Browser.Name = BrowserPostman
+
 	case strings.Contains(ua, "msie") || strings.Contains(ua, "trident"):
 		u.Browser.Name = BrowserIE
 
