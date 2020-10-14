@@ -37,6 +37,15 @@ func (u *UserAgent) evalBrowserName(ua string) bool {
 		case strings.Contains(ua, "wechat/"):
 			u.Browser.Name = BrowserWechat
 
+		case strings.Contains(ua, "postman"):
+			u.Browser.Name = BrowserPostman
+
+		case strings.Contains(ua, "flexpai"):
+			u.Browser.Name = BrowserFlexPai
+
+		case strings.Contains(ua, "flexpai2"):
+			u.Browser.Name = BrowserFlexPai2
+
 		case strings.Contains(ua, "opr/") || strings.Contains(ua, "opios/"):
 			u.Browser.Name = BrowserOpera
 
@@ -108,6 +117,12 @@ notwebkit:
 
 	case strings.Contains(ua, "postman"):
 		u.Browser.Name = BrowserPostman
+
+	case strings.Contains(ua, "flexpai"):
+		u.Browser.Name = BrowserFlexPai
+
+	case strings.Contains(ua, "flexpai2"):
+		u.Browser.Name = BrowserFlexPai2
 
 	case strings.Contains(ua, "msie") || strings.Contains(ua, "trident"):
 		u.Browser.Name = BrowserIE

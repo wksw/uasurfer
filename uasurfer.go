@@ -50,6 +50,8 @@ const (
 	BrowserQQ
 	BrowserWechat
 	BrowserPostman
+	BrowserFlexPai2
+	BrowserFlexPai
 	BrowserMaxthon
 	BrowserSogouExplorer
 	BrowserSpotify
